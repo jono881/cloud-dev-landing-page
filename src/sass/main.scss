@@ -1,8 +1,22 @@
 // Dark theme overrides
 $AU-colordark-foreground-text:   #ffffff;
-$AU-colordark-foreground-action: #f9f9f9;
+$AU-colordark-foreground-action: #61DAFF;
 $AU-colordark-foreground-focus:  #13e241;
-$AU-colordark-background:        #904C77;
+$AU-colordark-background:        rgba(4,107,153,.99);
+
+// #31312E;
+
+// Dark theme overrides default
+// $AU-colordark-foreground-text:   !default;
+// $AU-colordark-foreground-action: !default;
+// $AU-colordark-foreground-focus:  !default;
+// $AU-colordark-background:        !default;
+
+// // Default values - can be overridden with your own colours
+// $AU-color-foreground-action:     #00698f !default;
+// $AU-color-foreground-focus:      #9263DE !default;
+// $AU-color-foreground-text:       #313131 !default;
+// $AU-color-background:            #ffffff !default;
 
 // Light theme overrides
 // $AU-color-foreground-action: #134169;
@@ -21,6 +35,11 @@ body {
 	margin: 0;
 }
 
+// Add shadow to images
+.au-responsive-media-img .banner__image{
+	box-shadow: 5px 5px;
+
+}
 
 // Increase the spacing for au-body elements inside main
 main > .au-body {
