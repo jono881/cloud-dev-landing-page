@@ -48,13 +48,13 @@
 	<!-- OPENGRAPH -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Home page template - Australian Government Design System" />
-	<meta property="og:site_name" content="Australian Government Design System" />
+	<meta property="og:site_name" content="cloud.gov.au" />
 	<meta property="og:description" content="Home pages explain your product or service and help users find what they are looking for" />
 	<meta property="og:image" content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
 	<meta property="og:url" content="https://designsystem.gov.au" />
 	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.designsystem.gov.au/path/to/page/" />
 
-	<title>Australian Government Design System | Home</title>
+	<title>cloud.gov.au | Cloud Development Environment</title>
 
 	<script type="text/javascript">
 		var $html = document.documentElement; if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js"); else { var className = "no-js"; $html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " "), $html.className += " js" }
@@ -87,7 +87,7 @@
 		<a class="au-skip-link__link" href="#mainmenu">Skip to main navigation</a>
 	</nav>
 
-	<!-- HEADER -->
+	<!-- HEADER 1st variation-->
 	<header class="au-header au-header--dark" role="banner">
 		<div class="container-fluid">
 			<div class="row">
@@ -95,23 +95,44 @@
 					<a class="au-header__brand" href="#">
 						<img class="au-header__brand-image" alt="Insert alternate text here" src="assets/img/header-logo-agov.png">
 						<div class="au-header__text">
-							<h1 class="au-header__heading">Hello there...</h1>
-							<div class="au-header__subline">Simple explanation of the website</div>
+							<h1 class="au-header__heading">Cloud Development Environment</h1>
+							<div class="au-header__subline">A feature of cloud.gov.au</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
-					<form role="search" aria-label="sitewide" class="au-search au-search--dark au-search--icon">
+				<!-- <div class="col-sm-4"> -->
+					<!-- Search bar class -->
+					<!-- <form role="search" aria-label="sitewide" class="au-search au-search--dark au-search--icon">
 						<label for="standard" class="au-search__label">Search this website</label>
 						<input type="search" placeholder="Search this site" id="standard" name="standard" class="au-text-input au-text-input--dark"/>
 						<div class="au-search__btn">
 							<button class="au-btn au-btn--dark" type="submit"><span class="au-search__submit-btn-text">Search</span></button>
 						</div>
-					</form>
-				</div>
+					</form> -->
+				<!-- </div> -->
 			</div>
 		</div>
 	</header>
+
+	<!-- HEADER 2nd variation -->
+	<!-- <header class="au-grid au-header au-header--hero au-header--dark" role="banner">
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="col-md-8">
+			  <div class="au-header__brand">
+				<img class="au-header__brand-image" alt="Insert alternate text here" src="assets/img/header-logo-agov.png">
+				<div class="au-header__text">
+				  <h1 class="au-header__heading">Cloud Development Environment</h1>
+				  <div class="au-header__subline">
+					A feature of cloud.gov.au
+				  </div>
+				</div>
+			  </div>
+			</div> -->
+			<!-- <div class="col-md-3">Extras</div> -->
+		  <!-- </div>
+		</div>
+	  </header> -->
 
 	<!-- MAIN NAVIGATION -->
 	<nav class="au-main-nav au-main-nav--dark" id="#mainmenu" aria-label="main">
@@ -134,13 +155,13 @@
 									onClick="return AU.mainNav.Toggle( this )">
 									Close
 								</button>
-								<ul class="au-link-list">
+								<!-- <ul class="au-link-list">
 									<li class="active"><a href="#">Home</a></li>
 									<li><a href="content">Content page</a></li>
 									<li><a href="form">Form page</a></li>
 									<li><a href="#">Simple terms</a></li>
 									<li><a href="#">Distinct from eachother</a></li>
-								</ul>
+								</ul> -->
 								<div class="au-main-nav__focus-trap-bottom"></div>
 							</div>
 						</div>
@@ -153,40 +174,106 @@
 
 	<!-- MAIN BODY -->
 	<main id="content">
+		
+		<!-- Picture as background version!! -->
+		<!-- <div class="au-body au-body--alt banner" style="background-image: url('https://www.gitpod.io/static/04a67274312aeedce08b6b7a46e0046a/d3340/screenshot.png');
+		background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 100%;   filter: blur(0px);">
+
+		</div> -->
+		<!-- http://localhost:3000/assets/img/Recording.mp4 -->
+
+		<!-- <div class="au-body au-body--alt banner" style="background-image: url('https://www.gitpod.io/static/04a67274312aeedce08b6b7a46e0046a/d3340/screenshot.png');
+		background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 100%;   filter: blur(0px); opacity: 0.4;">			
+			<div class="container-fluid" style="filter: blur(0px); opacity: 1;">
+				<div class="row" >
+					<div class="col-xs-3" style="filter: blur(0px);">
+					</div>
+					<div class="col-xs-6" style="filter: blur(0px);">
+						<h1 style="text-align: center; color:#d8d8d8;">Supercharge your software developers</h1>
+						<p style="text-align: center; color:#d8d8d8;">Give your development team the tools they need to harness cloud computing within government.	</p>
+						<p style="text-align: center; color:#d8d8d8;">Reduce time wasted creating and maintaining development environments with access to the Cloud Development Environment.</p>
+						<p></p>
+						 <div class="au-form-group">
+							<input type="text" class="au-text-input au-text-input--block" placeholder="Name" id="name"/>
+						</div>
+						<p></p>
+						<input type="email" class="au-text-input au-text-input--block" placeholder="Email address" id="email" aria-invalid="true" aria-describedby="email-error-text" />
+						<p></p>
+						<div class="btn-cta-group">
+							<a class="au-btn au-btn--block" style="margin: auto;" href="#">Sign-up for updates</a>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div> -->
+		
+		  
+
 		<!--CONTENT-->
 		<div class="au-body au-body--alt banner">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-sm-push-6">
-						<img class="au-responsive-media-img banner__image" src="https://placekitten.com/600/260" alt="Placeholder image 600x260">
-						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ggDQXlinbME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+					<div class="col-sm-6 col-sm-push-6">
+						<!-- <iframe src='https://gfycat.com/ifr/ComfortablePlumpColt' style="box-shadow: 20px 20px 20px #d8d8d8;" frameborder='0' scrolling='no' allowfullscreen width='640' height='423'></iframe><p> <a href="https://gfycat.com/comfortableplumpcolt">via Gfycat</a></p> -->
+						<!-- <iframe width="560" height="315" style="box-shadow: 20px 20px 20px #d8d8d8;" src="https://www.youtube.com/embed/dH0yz-Osy54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					 -->
+						<iframe title="responsive video" class="au-responsive-media-vid__item" frameborder="0" width='100%' height='400' style="box-shadow: 10px 10px 5px #d8d8d8;" src="http://localhost:3000/assets/img/Landing Page.mp4" type="video/mov"></iframe>
+					
 					</div>
-					<div class="col-xs-12 col-sm-6 col-sm-pull-6">
-						<h2>Hero callout</h2>
-						<p>Support the callout with some short explanatory text. You don't need more than a couple of sentences.</p>
-						<p>Use buttons to give your user a clear call to action about what to do next.</p>
-						<div class="btn-cta-group">
-							<a class="au-btn" href="#">Primary call to action</a>
+					
+					<div class="col-sm-6 col-sm-pull-6">
+						<!-- Look into this, maybe get rid of pull -->
+						<div class="content">
+							<h1 class="au-display-xxxl">Supercharge your software developers</h1>
+							<p style="font-size:25px">The Cloud Development Environment gives your development team the tools they need to harness cloud computing within government.</p>
+							<p style="font-size:25px">Reduce time wasted creating and maintaining development environments with access to the Cloud Development Environment.</p>
+							<p></p>
 						</div>
+						
+						
+						 <!-- <div class="au-form-group">
+							<input type="text" class="au-text-input au-text-input--block" placeholder="Name" id="name"/>
+						</div>
+						<p></p>
+						<input type="email" class="au-text-input au-text-input--block" placeholder="Email address" id="email" aria-invalid="true" aria-describedby="email-error-text" /> -->
+						<div class="btn-cta-group">
+							<a class="au-btn" href="#bottom">Find out more</a>
+							<!-- <a class="au-btn au-btn--block au-btn--secondary" href="#">Contact us</a> -->
+						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- Second section (explanation) -->
 		<section class="au-body">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-12">
-						<h2>Some highlighted content</h2>
-						<p>Explain some important information upfront, what is the product or service. What is the role of it. How does the user get started using it. Keep this text simple and informative. Vestibulum non consequat tellus.</p>
+					<div class="col-sm-6 col-sm-push-6">
+						<h2 >What is the Cloud Development Environment?</h2>
+						<p>The Cloud Development Environment lets you write and deploy code to cloud.gov.au from anywhere in the world. It doesn’t matter what software or hardware you have, as long as you have access to a web browser.</p>
 
-						<p>Nullam sollicitudin orci neque, ut condimentum ipsum blandit eu. Praesent eu sagittis elit.</p>
+						<p>Restrictive desktop environments are a thing of the past, remote working is enabled, and you can get on with delivering simpler, clearer and faster government services for everyone.</p>
 
-						<p>Nullam ut nibh sed nunc molestie faucibus. Integer pulvinar sapien in porta fringilla. Cras et velit fermentum, pretium lacus gravida, egestas mauris. Explain some important information upfront, what is the product or service. What is the role of it. How does the user get started using it. Keep this text simple and informative.</p>
+						<p>The Cloud Development Environment gives developers access to a familiar IDE, plugins and source control. Set up your environment to match how you’d like to work, and deploy services rapidly to cloud.gov.au’s secure hosting.</p>
+						<div class="btn-cta-group">
+						<a class="au-btn" href="#bottom">Find out more</a>
+							<!-- <a class="au-btn au-btn--block au-btn--secondary" href="#">Contact us</a> -->
+						</div>
 					</div>
+					<div class="col-sm-6 col-sm-pull-6">
+						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/dH0yz-Osy54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					 -->
+						<!-- Refer to gitpod!!! -->
+						<!-- <img class="au-responsive-media-img banner__image" style="box-shadow: 20px 20px 20px #d8d8d8;" src="https://www.gitpod.io/static/04a67274312aeedce08b6b7a46e0046a/d3340/screenshot.png" alt="The Cloud Development Environment gives you access to a Visual Studio style IDE and plugins, as well as access to source control in GitHub, and simple deployment to cloud.gov.au"> -->
+						<img class="au-responsive-media-img banner__image" style="box-shadow: -10px 10px 5px #d8d8d8;" src="assets/img/Coding.png" alt="The Cloud Development Environment gives you access to a Visual Studio style IDE and plugins, as well as access to source control in GitHub, and simple deployment to cloud.gov.au">
+
+						<!-- <p>Source: gitpod.io</p> -->
+						<!-- <img class="au-responsive-media-img banner__image" alt="Placeholder image 600x400">					 -->
+					</div>				
 				</div>
 			</div>
 		</section>
-		<section class="au-body au-body--alt banner">
+		<!-- <section class="au-body au-body--alt banner">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
@@ -199,44 +286,51 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="au-body">
+		</section> -->
+		<section class="au-body au-body--alt banner">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>Articles</h2>
+						<h2 style="text-align: center;" class="au-display-xxl">Why use the Cloud Development Environment?</h2>
 						<div class="row">
 							<ul class="au-card-list au-card-list--matchheight ">
 								<li class="col-xs-12 col-sm-4">
 									<div class="au-card au-card--shadow au-card--centred au-card--clickable">
+									<!-- <div class="au-card au-body au-card--centred">	 -->
 										<img class="au-responsive-media-img" alt="placeholder image"
-												src="assets/img/600x260.jpg">
+												src="assets/img/shield.png">
+												<!-- Referencing
+												<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 										<div class="au-card__inner ">
-											<h2 class="au-card__title au-display-lg" type="heading"><a href="#"
-													class="au-card--clickable__link ">Card title</a></h2>
-											<p type="content" class="au-card__content">Additional text relating to the card.</p>
+											<h2 class="au-card__title au-display-lg" type="heading">
+												<a href="#" class="au-card--clickable__link ">Protected and secure environment </a>
+												<!-- <a href="#" class="au-card">Protected and secure environment </a> -->
+											</h2>
+											<p type="content" class="au-card__content">IRAP certified with high-grade security for government agencies</p>
 										</div>
 									</div>
 								</li>
 								<li class="col-xs-12 col-sm-4">
 									<div class="au-card  au-card--shadow au-card--centred au-card--clickable">
+										<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 										<img class="au-responsive-media-img"
-											alt="placeholder image" src="assets/img/600x260.jpg">
+											alt="placeholder image" src="assets/img/tick.png">
 										<div class="au-card__inner ">
 											<h2 class="au-card__title au-display-lg" type="heading"><a href="#"
-													class="au-card--clickable__link ">Card title</a></h2>
-											<p type="content" class="au-card__content">Additional text relating to the card.</p>
+													class="au-card--clickable__link ">Familiar and reliable cloud development providers</a></h2>
+											<p type="content" class="au-card__content">Potentially offering a range of environments from Visual Studio to Cloud9</p>
 										</div>
 									</div>
 								</li>
 								<li class="col-xs-12 col-sm-4">
 									<div class="au-card  au-card--shadow au-card--centred au-card--clickable">
+										<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 										<img class="au-responsive-media-img" alt="placeholder image"
-											src="assets/img/600x260.jpg">
+											src="assets/img/running.png">
 										<div class="au-card__inner ">
 										<h2 class="au-card__title au-display-lg" type="heading"><a href="#"
-													class="au-card--clickable__link ">Card title</a></h2>
-										<p type="content" class="au-card__content">Additional text relating to the card.</p>
+													class="au-card--clickable__link ">Scalable for ultra fast deployments</a></h2>
+										<p type="content" class="au-card__content">Offers fast deployments and greater flexibility on web browsers</p>
 									</div>
 								</div>
 							</li>
@@ -245,8 +339,51 @@
 				</div>
 			</div>
 
-			<div class="articles-cta">
+			<!-- Link to other features -->
+			<!-- <div class="articles-cta">
 				<a class="au-cta-link" href="#">See more features</a>
+			</div> -->
+
+		</section>
+
+		<section class="au-body" name="sign" style="background-color: #61DAFF;" id="bottom">
+			<div class="container-fluid">
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<h2 class="au-display-xxxl" style="text-align: center;">Sign-up for more exciting news about the Cloud Development Environment</h2>
+						<!-- <p>Content that is important to have on the home page but not so important that it has to be visible at the top of the page. This could include contact information, more detailed explanation of the functionality of a product or service.</p> -->
+						<p></p>
+					</div>
+					
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-3">
+
+					</div>
+
+					<div class="col-xs-6">
+		
+						<div class="au-form-group">
+							<form action="https://encda19xu219w.x.pipedream.net/" method="POST">
+								<input type="text" class="au-text-input au-text-input--block" placeholder="Name" id="name" name="name"/>
+								<p></p>
+								<input type="email" class="au-text-input au-text-input--block" placeholder="Email address" id="email" aria-invalid="true" aria-describedby="email-error-text" name="email"/>
+								<p></p>
+
+								<div class="btn-cta-group">
+									<button class="au-btn au-btn--block" id="submit">Sign-up for updates</button>
+									<!-- <a class="au-btn au-btn--secondary" href="#">Secondary call to action</a> -->
+								</div>
+							</form>
+							
+
+						</div>
+												
+						
+					</div>
+				</div>
 			</div>
 		</section>
 		<!--END CONTENT-->
@@ -259,9 +396,9 @@
 			<div class="row">
 				<nav class="col-md-12" aria-label="footer">
 					<ul class="au-link-list au-link-list--inline">
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Need Help?</a></li>
-						<li><a href="#">Accessibility</a></li>
+						<li><a href="https://cloud.gov.au/terms-of-service/">Privacy</a></li>
+						<li><a href="mailto:support@cloud.gov.au">Need Help?</a></li>
+						<li><a href="https://www.dta.gov.au/accessibility">Accessibility</a></li>
 					</ul>
 				</nav>
 				<section class="col-sm-12">
@@ -276,6 +413,7 @@
 
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="js/script.min.js"></script>
+
 </body>
 
 </html>
